@@ -6,9 +6,9 @@
     --header-height: 3rem;
     --font-semi: 600;
 
-    /* Colors */
+    /* Colors hsl(var(--hue-color), 89%, 60%)*/
     --hue-color: 340;
-    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --first-color: #144272;
     --second-color: hsl(var(--hue-color), 56%, 12%);
     --third-color: #fff;
 
