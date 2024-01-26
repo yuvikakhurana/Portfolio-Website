@@ -7,9 +7,9 @@
     --font-semi: 600;
 
     /* Colors hsl(var(--hue-color), 89%, 60%) hsl(var(--hue-color), 56%, 12%)*/
-    --hue-color: 340;
+    --hue-color: 500;
     --first-color: #144272;
-    --second-color: #5072A7;
+    --second-color: hsl(var(--hue-color), 56%, 12%);
     --third-color: #fff;
 
     /* Fonts */
