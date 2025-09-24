@@ -8,9 +8,9 @@
 
     /* Colors hsl(var(--hue-color), 89%, 60%) hsl(var(--hue-color), 56%, 12%)*/
     --hue-color: 330;
-    --first-color: #a94064;
-    --second-color: hsl(var(--hue-color), 56%, 12%);
-    --third-color: #fff;
+    --first-color: #4A90E2;
+    --second-color: #1C1C1E;
+    --third-color: #F9FAFB;
 
     /* Fonts */
     --body-font: 'Poppins', sans-serif;
@@ -572,6 +572,38 @@ img {
 
 .footer__copy {
     font-size: var(--smaller-font-size);
+}
+
+/* 🌙 DARK THEME */
+body.dark-theme {
+    --first-color: #4A90E2;     /* Keep accent blue */
+    --second-color: #EDEDED;    /* Light text */
+    --third-color: #121212;     /* Dark background */
+    
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
+
+body.dark-theme .l-header {
+    background-color: #1E1E1E;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-theme .projects__card,
+body.dark-theme .skills__content {
+    background-color: #1E1E1E;
+    border: 1px solid #2C2C2C;
+}
+
+body.dark-theme .projects__subtitle,
+body.dark-theme .projects__link,
+body.dark-theme .nav__link {
+    color: var(--second-color);
+}
+
+body.dark-theme .footer {
+    background-color: #0D0D0D;
+    color: #EDEDED;
 }
 
 

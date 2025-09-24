@@ -9,7 +9,7 @@
         <!-- BOX ICONS -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-    <body>
+    <body class="dark-theme">
         <!-- HEADER -->
 
         <header class="l-header">
@@ -23,9 +23,11 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                         <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><i class="bx bx-sun change-theme" id="theme-button"></i></li>
                     </ul>
                 </div>
 
@@ -41,7 +43,7 @@
             <!-- HOME -->
             <section class="home bd-grid section" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi, <br>I am <span class="home__title-color">Yuvika</span><br><p class="home__description">I am a full stack developer and a sophomore majoring in Computer Science at Purdue University.</p></h1>
+                    <h1 class="home__title">Hi, <br>I am <span class="home__title-color">Yuvika</span><br><p class="home__description"></p></h1>
 <!--                     <a download="" href="./assets/pdf/Yuvika_Khurana_Website-18.pdf" class="button">Download Resume</a> -->
                          <a href="#contact" class="button">Get In Touch -></a>
                 </div>
@@ -74,108 +76,163 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/IMG_6845n.jpg" alt="" />
+                        <img src="assets/img/IMG_1227.HEIC" alt="" />
                     </div>
 
                     <div>
                         <h2 class="about__subtitle">Hello there!</h2>
-                        <p class="about__text"> I'm a junior majoring in Computer Science at Purdue University. My journey in the world of coding has been an exciting one, driving me to become proficient in both front-end and back-end development. Throughout my time at Purdue, I've been engaged in a dynamic blend of learning, creativity, and exploration within the realm of Computer Science. <br> <br>  Away from the world of coding, I find solace in literature and cinema. You'll often find me immersed in the pages of captivating books or engrossed in the narrative magic of movies. These pursuits offer not only relaxation but also ignite my creativity and broaden my worldview. <br> <br> Thank you for taking the time to get to know a bit about me. I'm always eager to connect with others who share my passions and interests!</p>           
+                        <p class="about__text"> I'm a Computer Science major at Purdue University. My journey in the world of coding has been an exciting one, driving me to become proficient in both front-end and back-end development. Throughout my time at Purdue, I've been engaged in a dynamic blend of learning, creativity, and exploration within the realm of Computer Science.
+                            <br> <br> When I’m not behind a screen, you’ll probably find me sipping matcha, diving into a good book, or geeking out over a movie. I also love traveling and discovering new places whenever I get the chance.
+                            <br> <br> Thank you for taking the time to get to know a bit about me. I’m always up for connecting with people who love tech, creativity, or just nerding out over cool projects!</p>           
                     </div>                                   
                 </div>
             </section>
 
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience__container bd-grid">
+                    <div class="experience__content">
+                        <div class="experience__box">
+                            <div class="experience__data">
+                                <div class="experience__info">
+                                    <img src="./assets/img/Google_Icons-09-512.webp" alt="Google Logo" class="experience__logo">
+                                    <div class="experience__text">
+                                        <h3 class="experience__title">Software Engineering Intern</h3>
+                                        <span class="experience__company">Google | Sunnyvale, CA</span>
+                                        <span class="experience__date">Summer 2025</span>
+                                        <p class="experience__description">Led the end-to-end deprecation of a legacy storage system by designing and rolling out an experiment to halt new writes and developing a
+                                            custom RPC endpoint and Python-driven job.
+                                        <br><br>
+                                            Designed and developed new plugins within an internal platform using Java providing on-call engineers and Technical Solutions Engineers with
+                                            direct access to critical data, enabling faster issue resolution and efficient debugging workflows.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience__data">
+                                <div class="experience__info">
+                                    <img src="./assets/img/amazon_logo_history_5.jpg" alt="Amazon Logo" class="experience__logo">
+                                    <div class="experience__text">
+                                        <h3 class="experience__title">Software Development Engineer Intern</h3>
+                                        <span class="experience__company">Amazon | Bellevue, WA</span>
+                                        <span class="experience__date">Fall 2024</span>
+                                        <p class="experience__description">
+                                            Integrated search functionality into an internal service by establishing a synchronization pipeline between AWS OpenSearch Service and
+DynamoDB, enhancing data retrieval efficiency while configuring infrastructure through AWS Cloud Development Kit(CDK) in TypeScript.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience__data">
+                                <div class="experience__info">
+                                    <img src="./assets/img/Google_Icons-09-512.webp" alt="Google Logo" class="experience__logo">
+                                    <div class="experience__text">
+                                        <h3 class="experience__title">Software Engineering Intern</h3>
+                                        <span class="experience__company">Google | Pittsburgh, PA</span>
+                                        <span class="experience__date">Summer 2024</span>
+                                        <p class="experience__description">Developed an internal tool bridging several Google infrastructures to automate the analysis pipeline using C++ and Python, significantly saving
+                                            months of engineering time while streamlining workflows, improving confidence in the results, and enhancing error detection.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience__data">
+                                <div class="experience__info">
+                                     <img src="./assets/img/purduecs_logo.jpeg" alt="Purdue CS Logo" class="experience__logo">
+                                    <div class="experience__text">
+                                        <h3 class="experience__title">Teaching Assistant</h3>
+                                        <span class="experience__company">Purdue Department of Computer Science | West Lafayette, IN</span>
+                                        <span class="experience__date">Fall 2022 - Fall 2025</span>
+                                        <p class="experience__description">Facilitated instructional support for students in CS 180: Object-Oriented Programming in Java and CS 251: Data Structures & Algorithms by assisting students with assignments during lab sessions and providing guidance to enhance their
+                                            problem-solving abilities, helping them better understand and apply key programming concepts and techniques.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                .experience__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .experience__content {
+                    width: 100%;
+                    max-width: 800px; /* Adjust as needed */
+                }
+            
+                .experience__box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px; /* Increased gap for description */
+                }
+            
+                .experience__data {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start; /* Align items to the top to accommodate description */
+                    gap: 20px;
+                    padding: 15px;
+                    border-bottom: 1px solid #ddd;
+                }
+            
+                .experience__logo {
+                    width: 60px;
+                    height: auto;
+                    border-radius: 5px;
+                    margin-top: 5px; /* Adjust logo alignment with text */
+                }
+            
+                .experience__info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start; /* Align logo and text to the top */
+                    gap: 20px;
+                    flex: 1;
+                }
+            
+                .experience__text {
+                    flex: 1;
+                }
+            
+                .experience__title {
+                    font-size: 1.2em;
+                    margin-bottom: 5px;
+                    color: var(--title-color);
+                }
+            
+                .experience__company {
+                    color: var(--text-color-light);
+                    margin-bottom: 8px;
+                    font-size: 0.95em;
+                }
+            
+                .experience__date {
+                    display: block;
+                    color: var(--text-color-light);
+                    font-size: 0.9em;
+                    margin-bottom: 10px; /* Add some space below the date */
+                }
+            
+                .experience__description {
+                    font-size: 1em;
+                    line-height: 1.4;
+                    color: var(--text-color);
+                    margin-top: 10px; /* Add some space above the description */
+                }
+            
+                .experience__box > .experience__data:last-child {
+                    border-bottom: none;
+                }
+            </style>
             <!-- PROJECTS -->
 
             <section class="projects section" id="projects">
                 <h2 class="section-title">Projects</h2>
 
                 <div class="projects__container container grid">
-                    <article class="projects__card">
-                        <div class="projects__image">
-                            <img src="assets/img/Screenshot 2023-08-15 at 3.06.31 PM.png" alt="img" class="projects__img">
-                        </div>
-                        <div class="projects__content">
-                            <h2 class="projects__title">MERN Social Media App</h2>
-
-                            <p class="projects__description">A MERN full stack social media platform, seamlessly integrating MongoDB, Express.js, React, and Node.js, enabling users to create, connect, and share while ensuring real-time updates and data-driven interactions.</p>
-                        
-                            <h3 class="projects__subtitle">Skills used:</h3>
-                            <p class="projects__description">
-                                <i class='bx bxl-react' ></i>React.js |
-                                <i class='bx bxl-redux' ></i> Redux |
-                                <i class='bx bxl-nodejs' ></i>Node.js |
-                                <i class='bx bxl-javascript' ></i>JavaScript |
-                                <i class='bx bxl-html5'></i>HTML |
-                                <i class='bx bxl-css3' ></i>CSS |
-                                <i class='bx bxl-mongodb' ></i>MongoDB
-
-                        
-                            </p>
-
-                        </div>
-
-                        <div class="projects__buttons">
-                            <a href="https://github.com/yuvikakhurana/MERN_Social_Media_App.git" target="_blank" class="projects__link">
-                                <i class="bx bxl-github"></i> View
-                            </a> 
-
-                        </div>
-                    </article>
-
-                    
-                    <article class="projects__card">
-                        <div class="projects__image">
-                            <img src="assets/img/chat project.png" alt="img" class="projects__img">
-                        </div>
-                        <div class="projects__content">
-                            <h2 class="projects__title">APIs based Chat Application</h2>
-
-                            <p class="projects__description">A full-stack chat application that uses of OpenAI API for AI-driven chat capabilities and ChatEngine for hosting chats and Chat UI. The frontend is built using React, making use of Redux Toolkit for state management, Redux Toolkit Query for API calls and React Router for navigation. On the backend, Node.js provides the runtime environment, with Express.js serving as the backend framework to efficiently manage chat operations.</p>
-                        
-                            <h3 class="projects__subtitle">Skills used:</h3>
-                            <p class="projects__description">
-                                <i class='bx bxl-react' ></i>React.js |
-                                <i class='bx bxl-redux' ></i> Redux |
-                                <i class='bx bxl-nodejs' ></i>Node.js |
-                                <i class='bx bxl-javascript' ></i>JavaScript |
-                                <i class='bx bxl-html5'></i>HTML |
-                                <i class='bx bxl-css3' ></i>CSS |
-
-                        
-                            </p>
-
-                        </div>
-
-                        <div class="projects__buttons">
-
-                        </div>
-                    </article>
-
-                    <article class="projects__card">
-                        <div class="projects__image">
-                            <img src="assets/img/system_monitor.png" alt="img" class="projects__img">
-                        </div>
-                        <div class="projects__content">
-                            <h2 class="projects__title">System Monitor</h2>
-
-                            <p class="projects__description">A graphical System Monitor for Linux systems, offering a comprehensive suite of tools for displaying hardware resources and monitoring and managing system processes, CPU usage, network usage, and memory usage.</p>
-                        
-                            <h3 class="projects__subtitle">Skills used:</h3>
-                            <p class="projects__description">
-                                <i class='bx bxl-c-plus-plus'></i>C++ |
-                                <i class='bx bx-radio-circle' ></i> Linux |
-                                <i class='bx bx-radio-circle' ></i>Qt |
-                                <i class='bx bx-radio-circle' ></i>Qt Creator
-
-                            </p>
-
-                        </div>
-
-                        <div class="projects__buttons">
-
-                        </div>
-                    </article>
-
                     <article class="projects__card">
                         <div class="projects__image">
                             <img src="assets/img/boilerpal.jpg" alt="img" class="projects__img">
@@ -208,71 +265,70 @@
 
                     <article class="projects__card">
                         <div class="projects__image">
-                            <img src="assets/img/lms.webp" alt="img" class="projects__img">
+                            <img src="assets/img/system_monitor.png" alt="img" class="projects__img">
                         </div>
                         <div class="projects__content">
-                            <h2 class="projects__title">Database Learning Management System</h2>
+                            <h2 class="projects__title">System Monitor</h2>
 
-                            <p class="projects__description">Designed a Learning Management System using Graphical User Interfaces(GUI) incorporating features of Network I/O and
-                                Concurrency that allowed student and teacher users to interact through the discussion forums.</p>
-
+                            <p class="projects__description">A graphical System Monitor for Linux systems, offering a comprehensive suite of tools for displaying hardware resources and monitoring and managing system processes, CPU usage, network usage, and memory usage.</p>
+                        
                             <h3 class="projects__subtitle">Skills used:</h3>
                             <p class="projects__description">
-                                <i class='bx bxl-java' ></i>Java
+                                <i class='bx bxl-c-plus-plus'></i>C++ |
+                                <i class='bx bx-radio-circle' ></i> Linux |
+                                <i class='bx bx-radio-circle' ></i>Qt |
+                                <i class='bx bx-radio-circle' ></i>Qt Creator
+
                             </p>
+
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="https://github.com/yuvikakhurana/Database-Learning-Management-System.git" target="_blank" class="projects__link">
-                                <i class="bx bxl-github"></i> View
-                            </a> 
 
                         </div>
                     </article>
-                    
+
                     <article class="projects__card">
                         <div class="projects__image">
-                            <img src="assets/img/keeper.png" alt="img" class="projects__img">
+                            <img src="assets/img/chat project.png" alt="img" class="projects__img">
                         </div>
                         <div class="projects__content">
-            
-                            <h2 class="projects__title">Note-taking Web Application</h2>
+                            <h2 class="projects__title">APIs based Chat Application</h2>
 
-                            <p class="projects__description">A full-stack note-taking web application - Keeper App, that allows users to create, add and delete notes. It uses Node.js and JavaScript on the back-end and React.js, HTML, CSS as front-end techologies.</p>
-
+                            <p class="projects__description">A full-stack chat application that uses of OpenAI API for AI-driven chat capabilities and ChatEngine for hosting chats and Chat UI. The frontend is built using React and on the backend, Node.js provides the runtime environment, with Express.js serving as the backend framework to efficiently manage chat operations.</p>
+                        
                             <h3 class="projects__subtitle">Skills used:</h3>
                             <p class="projects__description">
-                                
                                 <i class='bx bxl-react' ></i>React.js |
+                                <i class='bx bxl-redux' ></i> Redux |
                                 <i class='bx bxl-nodejs' ></i>Node.js |
                                 <i class='bx bxl-javascript' ></i>JavaScript |
                                 <i class='bx bxl-html5'></i>HTML |
-                                <i class='bx bxl-css3' ></i>CSS
-                            
+                                <i class='bx bxl-css3' ></i>CSS |
+
+                        
                             </p>
-                            
+
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="https://github.com/yuvikakhurana/Keeper_App.git" target="_blank" class="projects__link">
-                                <i class="bx bxl-github"></i> View
-                            </a> 
 
                         </div>
                     </article>
+
                     <article class="projects__card">
                         <div class="projects__image">
-                            <img src="assets/img/to-do.png" alt="img" class="projects__img">
+                            <img src="assets/img/Screenshot 2023-08-15 at 3.06.31 PM.png" alt="img" class="projects__img">
                         </div>
                         <div class="projects__content">
-                            <h2 class="projects__title">To-Do List Web Application</h2>
+                            <h2 class="projects__title">MERN Social Media App</h2>
 
-                            <p class="projects__description">A full-stack To-Do List Web Application that allows users to create custom lists and supports functionalities to add and delete
-                                items. It uses Node.js, Express.js, JavaScript on the back-end and EJS, HTML, CSS on the front-end while using MongoDB Atlas for storing
-                                and maintaining data.</p>
-
+                            <p class="projects__description">A MERN full stack social media platform, seamlessly integrating MongoDB, Express.js, React, and Node.js, enabling users to create, connect, and share while ensuring real-time updates and data-driven interactions.</p>
+                        
                             <h3 class="projects__subtitle">Skills used:</h3>
                             <p class="projects__description">
+                                <i class='bx bxl-react' ></i>React.js |
+                                <i class='bx bxl-redux' ></i> Redux |
                                 <i class='bx bxl-nodejs' ></i>Node.js |
                                 <i class='bx bxl-javascript' ></i>JavaScript |
                                 <i class='bx bxl-html5'></i>HTML |
@@ -281,40 +337,11 @@
 
                         
                             </p>
-                        </div>
 
-                        
-
-                        <div class="projects__buttons">
-                            <a href="https://github.com/yuvikakhurana/Task-Management-Project.git" target="_blank" class="projects__link">
-                                <i class="bx bxl-github"></i> View
-                            </a> 
-
-                        </div>
-                    </article>
-
-                    <article class="projects__card">
-                        <div class="projects__image">
-                            <img src="assets/img/portfolio website project.png" alt="img" class="projects__img">
-                        </div>
-                        <div class="projects__content">
-                            
-                            <h2 class="projects__title">Portfolio Website</h2>
-
-                            <p class="projects__description">A responsive personal portfolio website employing HTML, CSS, and JavaScript to feature a collection of projects with interactive design elements and smooth navigation.</p>
-
-                            <h3 class="projects__subtitle">Skills used:</h3>
-                            <p class="projects__description">
-                                <i class='bx bxl-html5'></i>HTML |
-                                <i class='bx bxl-css3' ></i>CSS |
-                                <i class='bx bxl-javascript' ></i>JavaScript
-                            </p>
-
-                            </p>
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="https://github.com/yuvikakhurana/Portfolio-Website.git" target="_blank" class="projects__link">
+                            <a href="https://github.com/yuvikakhurana/MERN_Social_Media_App.git" target="_blank" class="projects__link">
                                 <i class="bx bxl-github"></i> View
                             </a> 
 
@@ -338,8 +365,7 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">Java</h3>
                                     </div>
                                 </div>
 
@@ -347,8 +373,7 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Intermediate</span>
+                                        <h3 class="skills__name skills_tech">Python</h3>
                                     </div>
                                 </div>
 
@@ -356,8 +381,7 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">C</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">C</h3>
                                     </div>
                                 </div>
 
@@ -365,8 +389,15 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">C++</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name skills_tech">TypeScript</h3>
                                     </div>
                                 </div>
 
@@ -374,14 +405,13 @@
 
 
                             <div class="skills__group">
-                            
+                                
 
                                 <div class="skills__data">
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">HTML</h3>
                                     </div>
                                 </div>
 
@@ -389,8 +419,7 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Intermediate</span>
+                                        <h3 class="skills__name skills_tech">CSS</h3>
                                     </div>
                                 </div>
 
@@ -398,8 +427,7 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">JavaScript</h3>
                                     </div>
                                 </div>
 
@@ -407,17 +435,15 @@
                                     <i class="bx bxs-badge-check"></i>
 
                                     <div>
-                                        <h3 class="skills__name">SQL</h3>
-                                        <span class="skills__level">Proficient</span>
+                                        <h3 class="skills__name skills_tech">SQL</h3>
                                     </div>
                                 </div>
+
 
                             </div>
 
                         </div>
-
                     </div>
-
                     <div class="skills__content">
                         <h3 class="skills__title">Frameworks/Technologies</h3>
 
@@ -502,6 +528,13 @@
                                     </div>
                                 </div>
 
+                                <div class="skills__data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name skills_tech">Amazon Web Services (AWS)</h3>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -526,6 +559,7 @@
                 </div>
             </section>
 
+            
         </main>
             <!-- FOOTER -->
 

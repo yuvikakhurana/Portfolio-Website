@@ -28,5 +28,14 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/* 🌙 DARK THEME TOGGLE */
+const themeButton = document.querySelector('.change-theme')
+
+// Check if button exists (avoid errors if not on page)
+if (themeButton) {
+    themeButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme')
+    })
+}
 
 
