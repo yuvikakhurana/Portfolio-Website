@@ -217,6 +217,33 @@ p { margin: 0; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
 .copyright { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 40px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
 
+/* Full-screen sections on larger screens: each section fills the viewport,
+   with its content centered vertically */
+@media (min-width: 768px) and (min-height: 600px) {
+  .hero {
+    min-height: calc(100vh - 92px);
+    min-height: calc(100svh - 92px);
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+  .section {
+    min-height: 100vh;
+    min-height: 100svh;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .about {
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+  }
+  .contact { min-height: 100vh; min-height: 100svh; display: flex; }
+  .contact-inner { flex: 1; }
+  .contact h2 { margin-top: auto; }
+  .copyright { margin-top: auto; }
+}
+
 /* Phones */
 @media (max-width: 640px) {
   .section h2 { font-size: 56px; }
