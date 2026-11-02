@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yuvika Khurana</title>
   <meta name="description" content="Yuvika Khurana, software engineer at Google working on Workspace Studio.">
-  <meta name="theme-color" content="#111214">
+  <meta name="theme-color" content="#0A0B14">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <div class="stars-far" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="wordmark" href="#top">Yuvika Khurana</a>
+    <a class="wordmark" href="#top"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="5.5" fill="#B9A8FF"/><ellipse cx="11" cy="11" rx="10" ry="3.2" fill="none" stroke="#F2B880" stroke-width="1.4" transform="rotate(-20 11 11)"/></svg>Yuvika Khurana</a>
     <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#work">Work</a>
@@ -28,18 +29,57 @@
 
   <main>
     <section id="top" class="hero">
+      <div class="stars twinkle" aria-hidden="true"></div>
       <div class="hero-text">
         <span class="eyebrow">Hi, I&rsquo;m</span>
-        <h1>Yuvika</h1>
+        <div class="name-wrap">
+          <h1>Yuvika</h1>
+          <svg class="name-spark" viewBox="0 0 60 60" aria-hidden="true"><path class="spk d2" d="M52 -6 C53 -1 54 0 59 1 C54 2 53 3 52 8 C51 3 50 2 45 1 C50 0 51 -1 52 -6 Z" fill="#FFFFFF"/></svg>
+        </div>
         <a class="btn btn-solid" href="#contact">Let's connect</a>
       </div>
-      <img class="hero-photo" src="assets/img/yuvika-grad.jpg" alt="Yuvika smiling on stone steps, holding a graduation cap and flowers" width="999" height="1250">
+      <div class="hero-orbit">
+        <svg viewBox="0 0 460 460" aria-hidden="true">
+          <defs>
+            <radialGradient id="oGlow" cx="50%" cy="50%" r="50%"><stop offset="55%" stop-color="#B9A8FF" stop-opacity=".22"/><stop offset="100%" stop-color="#B9A8FF" stop-opacity="0"/></radialGradient>
+            <radialGradient id="oMoon" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#FFF1DC"/><stop offset=".55" stop-color="#F2B880"/><stop offset="1" stop-color="#9A5A2C"/></radialGradient>
+            <radialGradient id="oRinged" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#E9E2FF"/><stop offset=".5" stop-color="#9C8BF0"/><stop offset="1" stop-color="#3A2F8A"/></radialGradient>
+            <clipPath id="oRingedClip"><circle cx="0" cy="0" r="30"/></clipPath>
+            <path id="oSpark" d="M0 -10 C1 -3 3 -1 10 0 C3 1 1 3 0 10 C-1 3 -3 1 -10 0 C-3 -1 -1 -3 0 -10 Z"/>
+          </defs>
+          <circle cx="230" cy="230" r="230" fill="url(#oGlow)"/>
+          <path d="M30 300 A225 78 -18 0 1 430 160" fill="none" stroke="#F2B880" stroke-opacity=".55" stroke-width="1.5"/>
+          <circle cx="230" cy="230" r="212" fill="none" stroke="#B9A8FF" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 7"/>
+          <g transform="translate(70 70)">
+            <g class="bob">
+              <path d="M-52 10 A54 14 -16 0 1 52 -10" fill="none" stroke="#F2B880" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+              <circle cx="0" cy="0" r="30" fill="url(#oRinged)"/>
+              <g clip-path="url(#oRingedClip)" fill="none" stroke-linecap="round">
+                <path d="M-34 -10 Q0 -18 34 -6" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="5"/>
+                <path d="M-34 4 Q0 -4 34 8" stroke="#2A2170" stroke-opacity=".35" stroke-width="4"/>
+                <path d="M-34 16 Q0 10 34 20" stroke="#FFFFFF" stroke-opacity=".14" stroke-width="3"/>
+              </g>
+              <path d="M52 -10 A54 14 -16 0 1 -52 10" fill="none" stroke="#F2B880" stroke-width="4" stroke-linecap="round"/>
+            </g>
+          </g>
+          <g transform="translate(436 176)">
+            <circle r="17" fill="url(#oMoon)"/>
+            <circle cx="-5" cy="-4" r="3.6" fill="#B87440" fill-opacity=".55"/>
+            <circle cx="6" cy="5" r="2.4" fill="#B87440" fill-opacity=".5"/>
+            <circle cx="-2" cy="9" r="1.6" fill="#B87440" fill-opacity=".5"/>
+          </g>
+          <circle cx="40" cy="336" r="8" fill="#7FD1C4"/><circle cx="37" cy="333" r="2.5" fill="#E6FFFA" fill-opacity=".7"/>
+          <g fill="#FFFFFF"><g transform="translate(400 70) scale(1.1)"><use href="#oSpark" class="spk"/></g><g transform="translate(452 300) scale(.7)"><use href="#oSpark" class="spk d2"/></g><g transform="translate(150 450) scale(.8)"><use href="#oSpark" class="spk d3"/></g></g>
+          <g fill="#F2B880"><g transform="translate(10 210) scale(.6)"><use href="#oSpark" class="spk d2"/></g><g transform="translate(330 430) scale(.55)"><use href="#oSpark" class="spk"/></g></g>
+          <g fill="#B9A8FF"><g transform="translate(250 6) scale(.6)"><use href="#oSpark" class="spk d3"/></g></g>
+        </svg>
+        <img class="hero-photo" src="assets/img/yuvika-grad.jpg" alt="Yuvika smiling on stone steps, holding a graduation cap and flowers" width="999" height="1250">
+      </div>
     </section>
 
     <section id="about" class="section about">
       <h2>About</h2>
       <div class="about-body">
-        <p class="about-hello">Hello there!</p>
         <p>I'm a software engineer at Google, working on Workspace Studio. The work I enjoy most is understanding how a system really behaves, weighing the trade-offs, and leaving things simpler for whoever comes next.</p>
         <p>What I've learned along the way: clear code outlasts clever code, the right question asked early saves weeks later, and how you work with people shapes the outcome as much as the code itself.</p>
         <div class="otc">
@@ -52,13 +92,14 @@
     <section id="work" class="section">
       <div class="section-head">
         <h2>Work</h2>
-        <span class="count">05</span>
+        <svg viewBox="0 0 90 40" aria-hidden="true"><path d="M4 30 L22 12 L40 22 L58 8 L84 18" fill="none" stroke="#7FD1C4" stroke-opacity=".5" stroke-width="1" stroke-dasharray="2 3"/><g fill="#F4F4F8"><circle cx="4" cy="30" r="1.8"/><circle cx="40" cy="22" r="1.6"/><circle cx="84" cy="18" r="2"/></g><path class="spk d3" d="M22 6 C23 10 24 11 28 12 C24 13 23 14 22 18 C21 14 20 13 16 12 C20 11 21 10 22 6 Z" fill="#FFFFFF"/><path class="spk" d="M58 2 C59 6 60 7 64 8 C60 9 59 10 58 14 C57 10 56 9 52 8 C56 7 57 6 58 2 Z" fill="#F2B880"/></svg>
       </div>
       <div class="jobs">
         <article class="job">
+          <span class="planet-dot ringed p-lavender" aria-hidden="true"></span>
           <span class="when">Feb 2026 – Present</span>
           <div class="role">
-            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="56" height="56">
+            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="52" height="52">
             <div>
               <h3>Software Engineer</h3>
               <span class="org">Google · Sunnyvale, CA</span>
@@ -70,9 +111,10 @@
           </div>
         </article>
         <article class="job">
+          <span class="planet-dot p-amber" aria-hidden="true"></span>
           <span class="when">Summer 2025</span>
           <div class="role">
-            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="56" height="56">
+            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="52" height="52">
             <div>
               <h3>Software Engineering Intern</h3>
               <span class="org">Google · Sunnyvale, CA</span>
@@ -83,9 +125,10 @@
           </div>
         </article>
         <article class="job">
+          <span class="planet-dot ringed p-teal" aria-hidden="true"></span>
           <span class="when">Fall 2024</span>
           <div class="role">
-            <img class="logo" src="assets/img/amazon_logo_history_5.jpg" alt="Amazon logo" width="56" height="56">
+            <img class="logo" src="assets/img/amazon_logo_history_5.jpg" alt="Amazon logo" width="52" height="52">
             <div>
               <h3>Software Development Engineer Intern</h3>
               <span class="org">Amazon · Bellevue, WA</span>
@@ -96,9 +139,10 @@
           </div>
         </article>
         <article class="job">
+          <span class="planet-dot p-rose" aria-hidden="true"></span>
           <span class="when">Summer 2024</span>
           <div class="role">
-            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="56" height="56">
+            <img class="logo" src="assets/img/Google_Icons-09-512.webp" alt="Google logo" width="52" height="52">
             <div>
               <h3>Software Engineering Intern</h3>
               <span class="org">Google · Pittsburgh, PA</span>
@@ -109,9 +153,10 @@
           </div>
         </article>
         <article class="job">
+          <span class="planet-dot ringed p-blue" aria-hidden="true"></span>
           <span class="when">Fall 2022 – Fall 2025</span>
           <div class="role">
-            <img class="logo" src="assets/img/purduecs_logo.jpeg" alt="Purdue Computer Science logo" width="56" height="56">
+            <img class="logo" src="assets/img/purduecs_logo.jpeg" alt="Purdue Computer Science logo" width="52" height="52">
             <div>
               <h3>Teaching Assistant</h3>
               <span class="org">Purdue Computer Science · West Lafayette, IN</span>
@@ -160,6 +205,31 @@
   </main>
 
   <footer id="contact" class="contact">
+    <div class="stars twinkle" aria-hidden="true"></div>
+    <svg class="contact-planet" viewBox="0 0 700 700" aria-hidden="true">
+      <defs>
+        <radialGradient id="cPlanet" cx="32%" cy="28%" r="85%"><stop offset="0" stop-color="#EDE6FF"/><stop offset=".35" stop-color="#A897F5"/><stop offset=".75" stop-color="#5546C2"/><stop offset="1" stop-color="#1D1A4A"/></radialGradient>
+        <radialGradient id="cAtmo" cx="50%" cy="50%" r="50%"><stop offset=".86" stop-color="#B9A8FF" stop-opacity="0"/><stop offset=".93" stop-color="#B9A8FF" stop-opacity=".35"/><stop offset="1" stop-color="#B9A8FF" stop-opacity="0"/></radialGradient>
+        <clipPath id="cClip"><circle cx="350" cy="350" r="230"/></clipPath>
+        <radialGradient id="cMoon" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#E9FFFB"/><stop offset=".55" stop-color="#7FD1C4"/><stop offset="1" stop-color="#2A7A70"/></radialGradient>
+      </defs>
+      <circle cx="350" cy="350" r="262" fill="url(#cAtmo)"/>
+      <path d="M14 400 A340 80 -14 0 1 686 300" fill="none" stroke="#F2B880" stroke-opacity=".55" stroke-width="10"/>
+      <circle cx="350" cy="350" r="230" fill="url(#cPlanet)"/>
+      <g clip-path="url(#cClip)" fill="none" stroke-linecap="round">
+        <path d="M100 250 C 240 200, 460 200, 600 240" stroke="#FFFFFF" stroke-opacity=".16" stroke-width="22"/>
+        <path d="M100 310 C 250 270, 460 270, 600 300" stroke="#2E2580" stroke-opacity=".35" stroke-width="16"/>
+        <path d="M100 380 C 240 330, 480 330, 600 370" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="26"/>
+        <path d="M100 450 C 260 410, 470 410, 600 440" stroke="#2E2580" stroke-opacity=".3" stroke-width="14"/>
+        <ellipse cx="430" cy="300" rx="40" ry="16" fill="#F2B880" fill-opacity=".35"/>
+      </g>
+      <circle cx="350" cy="350" r="230" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="2"/>
+      <path d="M686 300 A340 80 -14 0 1 14 400" fill="none" stroke="#F2B880" stroke-width="10"/>
+      <path d="M664 306 A318 70 -14 0 1 36 394" fill="none" stroke="#FFD9AE" stroke-opacity=".5" stroke-width="3"/>
+      <g transform="translate(118 120)"><circle r="30" fill="url(#cMoon)"/><circle cx="-9" cy="-6" r="6" fill="#2A7A70" fill-opacity=".4"/><circle cx="10" cy="8" r="4" fill="#2A7A70" fill-opacity=".35"/><circle cx="-2" cy="14" r="2.5" fill="#2A7A70" fill-opacity=".35"/></g>
+      <g fill="#FFFFFF"><path class="spk" d="M60 40 C62 52 66 56 78 58 C66 60 62 64 60 76 C58 64 54 60 42 58 C54 56 58 52 60 40 Z"/><path class="spk d2" d="M230 70 C231 76 233 78 239 79 C233 80 231 82 230 88 C229 82 227 80 221 79 C227 78 229 76 230 70 Z"/></g>
+      <path class="spk d3" d="M20 200 C21 207 23 209 30 210 C23 211 21 213 20 220 C19 213 17 211 10 210 C17 209 19 207 20 200 Z" fill="#F2B880"/>
+    </svg>
     <div class="contact-inner">
       <h2>Let's connect</h2>
       <div class="contact-links">
